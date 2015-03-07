@@ -37,3 +37,15 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
+.sns {
+	position: fixed;
+	top: 20px;
+	width: 100%;
+	text-align: center;
+	z-index: 99;
+
+	iframe {
+		vertical-align: bottom;
+	}
+}

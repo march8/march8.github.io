@@ -176,3 +176,16 @@ img {
   opacity: 0;
   visibility: hidden;
 }
+
+/* line 41, ../scss/style.scss */
+.sns {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+}
+/* line 48, ../scss/style.scss */
+.sns iframe {
+  vertical-align: bottom;
+}
