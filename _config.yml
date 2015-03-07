@@ -1,0 +1,24 @@
+# Site settings
+title: March 8
+description: Happy Birthday
+
+baseurl: ""
+url: http://march8.github.io
+
+github:
+  user: ixkaito
+  org: march8
+facebook:
+  user: kite.koga
+twitter:
+  user: ixkaito
+
+images_dir: /assets/images
+audio_dir: /assets/audio
+css_dir: /assets/css
+js_dir: /assets/js
+
+ogp_image: /ogp-image.png
+
+# Build settings
+markdown: redcarpet

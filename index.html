@@ -31,13 +31,13 @@
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./assets/images/favicon.ico">
 
-<link rel="stylesheet" href="./_assets/css/reset.css" />
-<link rel="stylesheet" href="./_assets/css/style.css" />
-<script type="text/javascript" src="./_assets/js/modernizr-2.6.2.min.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}{{ site.css_dir }}/reset.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}{{ site.css_dir }}/style.css" />
+<script type="text/javascript" src="{{ site.baseurl }}{{ site.js_dir }}/modernizr-2.6.2.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript">window.jQuery || document.write('<script src="./_assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript">window.jQuery || document.write('<script src="{{ site.baseurl }}{{ site.js_dir }}/jquery-1.10.2.min.js"><\/script>')</script>
 <!--[if lt IE 9]>
-<script type="text/javascript" src="./_assets/js/IE9.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}{{ site.js_dir }}/IE9.js"></script>
 <![endif]-->
 </head>
 <body>
@@ -59,28 +59,28 @@
 <?php if((strpos($ua,'iPhone')===false) && (strpos($ua,'iPod')===false) && (strpos($ua,'iPad')===false) && (strpos($ua,'Android')===false)): ?>
 
 	<audio preload="auto" id="audio">
-		<source src="./_assets/audio/joutouku.mp3" type="audio/mp3">
-		<source src="./_assets/audio/joutouku.ogg" type="audio/ogg">
+		<source src="{{ site.baseurl }}{{ site.audio_dir }}/joutouku.mp3" type="audio/mp3">
+		<source src="{{ site.baseurl }}{{ site.audio_dir }}/joutouku.ogg" type="audio/ogg">
 	</audio>
 
 	<p id="initial" style="width: 600px; position: fixed; top: 50%; left: 50%; margin: -32px 0 0 -300px; text-align: center; color: #999; font-size: 11px; letter-spacing: 0.1em;">
-		<img id="playButton" style="margin-bottom: 40px; cursor: pointer;" src="./_assets/images/playButton.png" height="64" width="64" alt="" onclick="ga('send', 'event', '20140308', 'Play', '<?= $ip; ?>');" /><br />
+		<img id="playButton" style="margin-bottom: 40px; cursor: pointer;" src="{{ site.baseurl }}{{ site.image_dir }}/playButton.png" height="64" width="64" alt="" onclick="ga('send', 'event', '20140308', 'Play', '<?= $ip; ?>');" /><br />
 		<span class="notes">音量を上げてから再生してください。</span>
 	</p>
 	<ul>
-		<li id="title" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/storyOfYouAndMe.png" alt="" /></li>
-		<li id="gif1" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/1.gif" alt="" /></li>
-		<li id="gif2" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/2.gif" alt="" /></li>
-		<li id="gif3" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/3.gif" alt="" /></li>
-		<li id="gif4" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/4.gif" alt="" /></li>
-		<li id="gif5" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/5.gif" alt="" /></li>
-		<li id="gif6" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/6.gif" alt="" /></li>
-		<li id="gif7" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/7.gif" alt="" /></li>
-		<li id="iLoveYou" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/iLoveYou.png" alt="" /></li>
-		<li id="happyBirthday" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="./_assets/images/happyBirthday.png" alt="" /></li>
+		<li id="title" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/storyOfYouAndMe.png" alt="" /></li>
+		<li id="gif1" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/1.gif" alt="" /></li>
+		<li id="gif2" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/2.gif" alt="" /></li>
+		<li id="gif3" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/3.gif" alt="" /></li>
+		<li id="gif4" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/4.gif" alt="" /></li>
+		<li id="gif5" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/5.gif" alt="" /></li>
+		<li id="gif6" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/6.gif" alt="" /></li>
+		<li id="gif7" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/7.gif" alt="" /></li>
+		<li id="iLoveYou" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/iLoveYou.png" alt="" /></li>
+		<li id="happyBirthday" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.image_dir }}/happyBirthday.png" alt="" /></li>
 	</ul>
 
-	<script type="text/javascript" src="./_assets/js/script.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}{{ site.js_dir }}/script.js"></script>
 
 <?php else: ?>
 
