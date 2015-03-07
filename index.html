@@ -7,19 +7,19 @@ layout: default
 	<source src="{{ site.baseurl }}{{ site.audio_dir }}/joutouku.ogg" type="audio/ogg">
 </audio>
 
-<p id="initial" style="width: 600px; position: fixed; top: 50%; left: 50%; margin: -32px 0 0 -300px; text-align: center; color: #999; font-size: 11px; letter-spacing: 0.1em;">
-	<img id="playButton" style="margin-bottom: 40px; cursor: pointer;" src="{{ site.baseurl }}{{ site.images_dir }}/playButton.png" height="64" width="64" alt="" onclick="ga('send', 'event', '20140308', 'Play', '<?= $ip; ?>');" /><br />
+<p id="initial">
+	<img id="playButton" src="{{ site.baseurl }}{{ site.images_dir }}/playButton.png" alt="Play" /><br />
 	<span class="notes">音量を上げてから再生してください。</span>
 </p>
 <ul>
-	<li id="title" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/storyOfYouAndMe.png" alt="" /></li>
-	<li id="gif1" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/1.gif" alt="" /></li>
-	<li id="gif2" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/2.gif" alt="" /></li>
-	<li id="gif3" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/3.gif" alt="" /></li>
-	<li id="gif4" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/4.gif" alt="" /></li>
-	<li id="gif5" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/5.gif" alt="" /></li>
-	<li id="gif6" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/6.gif" alt="" /></li>
-	<li id="gif7" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/7.gif" alt="" /></li>
-	<li id="iLoveYou" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/iLoveYou.png" alt="" /></li>
-	<li id="happyBirthday" style="position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; opacity: 0; visibility: hidden;"><img src="{{ site.baseurl }}{{ site.images_dir }}/happyBirthday.png" alt="" /></li>
+	<li id="title" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/storyOfYouAndMe.png" alt="" /></li>
+	<li id="gif1" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/1.gif" alt="" /></li>
+	<li id="gif2" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/2.gif" alt="" /></li>
+	<li id="gif3" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/3.gif" alt="" /></li>
+	<li id="gif4" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/4.gif" alt="" /></li>
+	<li id="gif5" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/5.gif" alt="" /></li>
+	<li id="gif6" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/6.gif" alt="" /></li>
+	<li id="gif7" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/7.gif" alt="" /></li>
+	<li id="iLoveYou" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/iLoveYou.png" alt="" /></li>
+	<li id="happyBirthday" class="animation"><img src="{{ site.baseurl }}{{ site.images_dir }}/happyBirthday.png" alt="" /></li>
 </ul>

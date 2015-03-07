@@ -8,24 +8,20 @@
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>2014.03.08</title>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<title>{{ site.title }}</title>
+<meta name="description" content="{{ site.description }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta property="og:title" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
-<meta property="og:site_name" content="" />
-<meta property="fb:admins" content="1047363919" />
-<!--<meta property="fb:app_id" content="" />-->
+<meta property="og:type" content="song" />
+<meta property="og:title" content="{{ site.title }}" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.images_dir }}{{ site.ogp_image }}" />
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/" />
+<meta property="og:site_name" content="{{ site.title }}" />
 
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./assets/images/favicon.ico">
 
-<link rel="stylesheet" href="{{ site.baseurl }}{{ site.css_dir }}/reset.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}{{ site.css_dir }}/style.css" />
 <script type="text/javascript" src="{{ site.baseurl }}{{ site.js_dir }}/modernizr-2.6.2.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

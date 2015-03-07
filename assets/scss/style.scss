@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import "compass";
+@import "reset";
+
+.notes{
+	border-radius: 20px;
+	background: #ccc;
+	color: #fff;
+	display: inline-block;
+	padding: 0.3em 1em 0.2em 2em;
+}
+
+#initial {
+	width: 600px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -32px 0 0 -300px;
+	text-align: center;
+	color: #999;
+	font-size: 11px;
+	letter-spacing: 0.1em;
+}
+
+#playButton {
+	margin-bottom: 40px;
+	cursor: pointer;
+	height: 64px;
+	width: 64px;
+}
+
+.animation {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -300px 0 0 -300px;
+	opacity: 0;
+	visibility: hidden;
+}
